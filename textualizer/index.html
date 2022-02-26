@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Textualizer</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" language="javascript" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div id="logo">
+                <h1>Textualizer</h1>
+            </div>
+            <nav>
+                -<a href=""> Inicio </a>-
+                <a href="">Listar</a> -
+                <a href="">Otros</a>-
+                <a href="">Acerca de</a>-
+            </nav>
+        </header>
+
+        <div id="main">
+            <h4>Datos de carga</h4>
+            <br>
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>F. Modificación</td>
+                    <td>F. Depósito</td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="identificador"></td>
+                    <td><input type="date" id="fechaMod"></td>
+                    <td><input type="date" id="fechaDeposito"></td>
+                </tr>
+            </table>
+            <textarea id="textAreaCarga" rows="6" cols="100">https://www.memoria.fahce.unlp.edu.ar/programas/pp.xxxx/pp.xxxx.pdf&NewLine;XX&NewLine;&NewLine;KSHMM-MM-MMMMDDDD-DD-DD^pCR^mDI&NewLine;&NewLine;4.0 Internacional^uhttps://creativecommons.org/licenses/by-nc-sa/4.0/</textarea>
+            <button id="btnDatosCarga" class="w3-button w3-black w3-round-xlarge"><bold>Generar</bold></button>
+            <br>
+            <br>
+            <h4>Datos de Digitalización</h4>
+            <br>
+            <table>
+                <tr>
+                    <td>F. Modificación</td>
+                    <td>Responsable</td>
+                    <td>Escáner</td>
+                </tr>
+                <tr>
+                    <td><input type="date" id="fechaDigitalizacion"></td>
+                    <td>
+                        <select id="responsable" name="Responsable">
+                                <option value="D'elía, Nicolás">D'elía</option>
+                                <option value="San Miguel, Laura de">San Miguel</option>
+                                <option value="Quinteros, Felipe">Quinteros</option>
+                                <option value="Shimabukuro, Kevin">Shimabukuro</option>
+                            </select>
+                    </td>
+                    <td>
+                        <select id="escaner" name="escaner">
+                                <option value="Ricoh Aficio MP 2851">Ricoh 2851</option>
+                                <option value="Ricoh Aficio MP 3010">Ricoh 3010</option>
+                                <option value="hHewlett-Packard ScanJet 5590">HP</option>
+                                <option value="CanoScan LiDE 25">Cannon</option>
+                            </select>
+                    </td>
+                </tr>
+            </table>
+            <textarea id="textAreaDigitalizacion" rows="4" cols="100">^fDDDD-DD-DD^iBIBHUMA^pdigitalizador^cscanner^hescaner^sgscan2pdf&NewLine;^tedición^fDDDD-DD-DD^iBIBHUMA^pdigitalizador^sscantailor%^tocr^fDDDD-DD-DD^iBIBHUMA^pdigitalizador^sgscan2pdf%^tgeneración PDF^fDDDD-DD-DD^iBIBHUMA^pdigitalizador^sgscan2pdf</textarea>
+            <button id="btnDatosDigitalizacion" class="w3-button w3-black w3-round-xlarge"><bold>Generar</bold></button>
+        </div>
+    </div>
+</body>
+
+</html>
